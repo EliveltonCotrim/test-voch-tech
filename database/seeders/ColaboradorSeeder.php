@@ -2,17 +2,17 @@
 
 namespace Database\Seeders;
 
-use App\Models\Unidade;
+use App\Models\Colaborador;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class UnidadeSeeder extends Seeder
+class ColaboradorSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Unidade::factory(100)->create();
+        Colaborador::factory(100)->create();
     }
 }
