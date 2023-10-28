@@ -14,11 +14,18 @@ Colaboradores.
 Por favor, siga os comandos abaixo para realizar a configuração inicial e instalação das dependências do projeto, seguindo a ordem indicada:
 
 ```
-npm install
+Clone o repositório para seu ambiente de desenvolvimento, lembrando que o desenvolvimento deste teste foi feito
 ```
 ```
-npm run web
+composer install
 ```
 ```
-npm run server
+cp .env.example
 ```
+```
+php artisan key:generate
+```
+```
+php artisan migrate
+```
+
