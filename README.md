@@ -30,6 +30,10 @@ cp .env.example .env
 php artisan key:generate
 ```
 ```
+Definir APP_URL=http://localhost/pasta_do_projeto/public
+```
+
+```
 php artisan migrate --seed
 ```
 ```
