@@ -19,11 +19,10 @@ class CargoColaboradorFactory extends Factory
     public function definition(): array
     {
         $cargo = Cargo::inRandomOrder()->first();
-        $colaborador = Colaborador::inRandomOrder()->first();
 
         return [
             'cargo_id' => $cargo->id,
-            'colaborador_id' => $colaborador->id,
+            'colaborador_id' => Colaborador::factory()->create()->id,
             'nota_desempenho' => fake()->randomFloat(2, 0, 10),
         ];
     }

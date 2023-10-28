@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('cargo_colaboradors', function (Blueprint $table) {
+        Schema::create('cargo_colaborador', function (Blueprint $table) {
             $table->id();
             $table->foreignId('cargo_id')->constrained()->cascadeOnDelete();
             $table->foreignId('colaborador_id')->constrained()->cascadeOnDelete();
-            $table->integer('nota_desempenho');
+            $table->integer('nota_desempenho')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('cargo_colaboradors');
+        Schema::dropIfExists('cargo_colaborador');
     }
 };

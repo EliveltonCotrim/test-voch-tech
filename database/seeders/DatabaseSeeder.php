@@ -22,7 +22,6 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UnidadeSeeder::class,
             CargoSeeder::class,
-            ColaboradorSeeder::class,
             CargoColaboradorSeeder::class,
         ]);
     }

@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Colaborador extends Model
@@ -19,9 +20,8 @@ class Colaborador extends Model
         return $this->belongsTo(Unidade::class);
     }
 
-    public function cargos(): BelongsToMany
+    public function cargoColaborador(): HasOne
     {
-        return $this->belongsToMany(Cargo::class)->using(CargoColaborador::class)
-            ->withPivot('nota_desempenho');
+        return $this->hasOne(CargoColaborador::class);
     }
 }

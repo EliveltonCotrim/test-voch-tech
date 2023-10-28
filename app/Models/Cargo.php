@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Cargo extends Model
@@ -13,9 +14,8 @@ class Cargo extends Model
 
     protected $fillable = ['cargo'];
 
-    public function colaboradores(): BelongsToMany
+    public function cargoColaborador(): HasMany
     {
-        return $this->belongsToMany(Colaborador::class)->using(CargoColaborador::class)
-            ->withPivot('nota_desempenho');
+        return $this->hasMany(CargoColaborador::class);
     }
 }

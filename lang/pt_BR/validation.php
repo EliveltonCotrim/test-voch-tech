@@ -213,7 +213,11 @@ return [
         'modality' => 'modalidade',
         'category' => 'categoria',
         'blood_type' => 'tipo sanguíneo',
-        'birth_date' => 'data de nascimento'
+        'birth_date' => 'data de nascimento',
+        'razao_social' => 'razão social',
+        'cargo_id' => 'cargo',
+        'unidade_id' => 'unidade',
+        'nota_desempenho' => 'nota de desempenho',
     ],
 
 ];
