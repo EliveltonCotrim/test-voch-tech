@@ -24,9 +24,6 @@ composer install
 npm install
 ```
 ```
-npm run dev
-```
-```
 cp .env.example
 ```
 ```
@@ -34,6 +31,9 @@ php artisan key:generate
 ```
 ```
 php artisan migrate --seed
+```
+```
+npm run dev
 ```
 
 
