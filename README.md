@@ -7,7 +7,8 @@ O objetivo deste teste é criar um sistema para gerenciar o cadastro de unidades
 Colaboradores.
 - Ranking de Colaboradores melhores avaliados (da maior nota a menor): Nome, CPF, Email, Unidade, Cargo, Nota de Desempenho.
 
-![image](https://github.com/EliveltonCotrim/nlw_ia/assets/images/system.png)
+![image](https://github.com/EliveltonCotrim/test-voch-tech/blob/ffe3cc8f6a859c55c8e4cbce28943a1b0ef4e8da/public/assets/images/system.png)
+
   
 # Instalação
 
