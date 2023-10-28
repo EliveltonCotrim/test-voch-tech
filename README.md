@@ -26,6 +26,12 @@ cp .env.example
 php artisan key:generate
 ```
 ```
-php artisan migrate
+php artisan migrate --seed
+```
+```
+npm install
+```
+```
+npm run dev
 ```
 
