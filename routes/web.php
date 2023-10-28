@@ -40,4 +40,4 @@ Route::prefix('colaboradores')->group(function () {
     Route::get('/search', [ColaboradorController::class, 'search'])->name('colaboradores.search');
 });
 
-Route::get('/relatorios', [RelatorioController::class, 'index'])->name('relatorios.index');
+Route::get('/', [RelatorioController::class, 'index'])->name('relatorios.index');
